@@ -30,7 +30,8 @@ main1 =
 
 {-
   Given a graph with `n` nodes and a list of weighted undirected edges, compute
-  returns the list of edges in a minimum-weight spanning forest of the graph.
+  returns the list of edges in a minimum-weight spanning forest of the graph
+  (sorted by ascending weight).
   If the graph is connected: aborts early once all edges have been found.
 -}
 kruskal :: (Ord a, Ord b) => Int -> [((a,a), b)] -> [(a,a)]
